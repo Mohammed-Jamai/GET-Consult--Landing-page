@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Strategic consulting at the intersection of engineering, finance, energy and digital. GET Consult — Transforming Industry. Accelerating Growth.">
+  <meta property="og:title" content="GET Consult — Strategic Consulting & Engineering">
+  <meta property="og:description" content="Strategic consulting at the intersection of engineering, finance, energy and digital — for organizations ready to transform.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.get-consult.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>GET Consult — Strategic Consulting & Engineering</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin>
+  <script>
+    (function () {
+      var theme = localStorage.getItem('get-theme');
+      if (theme === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    })();
+  </script>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "GET Consult",
+    "url": "https://www.get-consult.com",
+    "email": "contact@get-consult.com",
+    "description": "Strategic consulting at the intersection of engineering, finance, energy and digital.",
+    "foundingDate": "2018",
+    "areaServed": ["Morocco", "Côte d'Ivoire", "Senegal", "Benin", "Togo", "Ghana", "Mali", "Africa"],
+    "address": [
+      { "@type": "PostalAddress", "addressLocality": "Fès", "addressCountry": "MA" },
+      { "@type": "PostalAddress", "addressLocality": "Casablanca", "addressCountry": "MA" }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="#hero" class="header-logo" aria-label="GET Consult home">
+        <img src="assets/logo.svg" alt="GET Consult" width="280" height="84">
+      </a>
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="header-menu">
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="menu-toggle-bar"></span>
+        <span class="sr-only" data-i18n="nav.menu">Menu</span>
+      </button>
+      <div class="header-menu" id="header-menu">
+        <div class="mobile-drawer-header">
+          <a href="#hero" class="mobile-drawer-logo" aria-label="GET Consult home">
+            <img src="assets/logo.svg" alt="" width="200" height="60">
+          </a>
+          <button type="button" class="menu-close" id="menu-close" aria-label="Close menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+        <nav class="header-nav" aria-label="Primary">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#expertise" data-i18n="nav.expertise">Expertise</a>
+          <a href="#methodology" data-i18n="nav.methodology">Methodology</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" aria-pressed="false">
+            <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+          </button>
+          <div class="lang-toggle" role="group" aria-label="Language">
+            <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
+            <span class="lang-sep" aria-hidden="true">/</span>
+            <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+          </div>
+          <a href="#contact" class="header-cta" data-i18n="nav.cta">Start a Conversation</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="menu-backdrop" id="menu-backdrop" hidden aria-hidden="true"></div>
+
+  <nav class="progress-nav" id="progress-nav" aria-label="Section navigation">
+    <ol class="progress-list">
+      <li><a href="#hero" data-section="hero"><span class="progress-num">01</span></a></li>
+      <li><a href="#about" data-section="about"><span class="progress-num">02</span></a></li>
+      <li><a href="#vision" data-section="vision"><span class="progress-num">03</span></a></li>
+      <li><a href="#mission" data-section="mission"><span class="progress-num">04</span></a></li>
+      <li><a href="#expertise" data-section="expertise"><span class="progress-num">05</span></a></li>
+      <li><a href="#methodology" data-section="methodology"><span class="progress-num">06</span></a></li>
+      <li><a href="#why" data-section="why"><span class="progress-num">07</span></a></li>
+      <li><a href="#reach" data-section="reach"><span class="progress-num">08</span></a></li>
+      <li><a href="#impact" data-section="impact"><span class="progress-num">09</span></a></li>
+      <li><a href="#contact" data-section="contact"><span class="progress-num">10</span></a></li>
+    </ol>
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="section section-hero" id="hero" data-section-index="1">
+      <div class="hero-bg parallax-bg" aria-hidden="true">
+        <img src="assets/images/hero-factory.jpg" alt="" loading="eager"
+             data-fallback="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1920&q=80">
+      </div>
+      <div class="section-inner hero-content">
+        <p class="section-label reveal" data-i18n="hero.label">Strategic Consulting &amp; Engineering</p>
+        <h1 class="hero-title headline-animate">
+          <span class="line" data-i18n="hero.line1">Transforming Industry.</span>
+          <span class="line" data-i18n="hero.line2">Accelerating Growth.</span>
+        </h1>
+        <p class="hero-value reveal reveal-delay" data-i18n="hero.value">Strategic consulting at the intersection of engineering, finance, energy and digital — for organizations ready to transform.</p>
+        <p class="hero-tags reveal reveal-delay" data-i18n="hero.tags">Industrial · Digital · Energy</p>
+        <div class="hero-actions reveal reveal-delay-2">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaPrimary">Start a Conversation</a>
+          <a href="#" class="btn btn-secondary" id="hero-calendly" data-i18n="hero.ctaCalendly">Book a Quick Call</a>
+        </div>
+      </div>
+      <div class="sectors-strip reveal reveal-delay-2">
+        <div class="sectors-inner" id="sectors-list">
+          <span>Manufacturing</span>
+          <span class="sectors-dot" aria-hidden="true"></span>
+          <span>Energy</span>
+          <span class="sectors-dot" aria-hidden="true"></span>
+          <span>Infrastructure</span>
+          <span class="sectors-dot" aria-hidden="true"></span>
+          <span>Investment</span>
+          <span class="sectors-dot" aria-hidden="true"></span>
+          <span>Public Sector</span>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to next section">
+        <span class="scroll-hint-line"></span>
+      </a>
+    </section>
+
+    <section class="section section-split" id="about" data-section-index="2">
+      <div class="section-inner split-grid">
+        <div class="split-text reveal">
+          <p class="section-number" data-i18n="about.number">01 — Who We Are</p>
+          <h2 class="section-headline headline-animate">
+            <span class="line" data-i18n="about.line1">A Partner for</span>
+            <span class="line" data-i18n="about.line2">Transformation.</span>
+          </h2>
+          <p class="section-body" data-i18n="about.body">GET Consult supports industries, organizations and investors through strategic transformation projects — combining engineering, finance, digital innovation and sustainability into a single, integrated practice.</p>
+          <p class="section-body section-body--serve" data-i18n="about.serve">Serving industrial groups, investors and public institutions across Morocco and MENA.</p>
+        </div>
+        <div class="split-image reveal reveal-delay">
+          <img src="assets/images/about-manufacturing.jpg" alt="" loading="lazy"
+               data-fallback="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=1200&q=80">
+        </div>
+      </div>
+      <div class="section-inner engagements reveal reveal-delay-2">
+        <p class="engagements-label" data-i18n="about.engagementsLabel">Selected Engagements</p>
+        <div class="engagements-grid">
+          <article class="engagement-item">
+            <span class="engagement-sector" data-i18n="about.e1sector">Industrial Manufacturing</span>
+            <p class="engagement-desc" data-i18n="about.e1desc">Operational audit &amp; performance optimization across production lines.</p>
+          </article>
+          <article class="engagement-item">
+            <span class="engagement-sector" data-i18n="about.e2sector">Renewable Energy</span>
+            <p class="engagement-desc" data-i18n="about.e2desc">Feasibility study &amp; investment readiness for solar infrastructure.</p>
+          </article>
+          <article class="engagement-item">
+            <span class="engagement-sector" data-i18n="about.e3sector">Public Infrastructure</span>
+            <p class="engagement-desc" data-i18n="about.e3desc">Digital transformation roadmap &amp; smart systems integration.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-fullbleed" id="vision" data-section-index="3">
+      <div class="fullbleed-bg parallax-bg" aria-hidden="true">
+        <img src="assets/images/vision-industrial.jpg" alt="" loading="lazy"
+             data-fallback="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920&q=80">
+      </div>
+      <div class="section-inner fullbleed-content reveal">
+        <p class="section-number" data-i18n="vision.number">02 — Vision</p>
+        <h2 class="section-headline headline-animate">
+          <span class="line" data-i18n="vision.line1">Building Tomorrow's</span>
+          <span class="line" data-i18n="vision.line2">Industry.</span>
+        </h2>
+        <p class="section-body section-body--narrow" data-i18n="vision.body">We believe the future belongs to organizations capable of combining operational excellence, technological innovation and sustainable growth.</p>
+      </div>
+    </section>
+
+    <section class="section section-mission" id="mission" data-section-index="4">
+      <div class="section-inner">
+        <div class="mission-header reveal">
+          <p class="section-number" data-i18n="mission.number">03 — Mission</p>
+          <h2 class="section-headline headline-animate">
+            <span class="line" data-i18n="mission.line1">Turning Challenges</span>
+            <span class="line" data-i18n="mission.line2">into Opportunities.</span>
+          </h2>
+        </div>
+        <div class="mission-grid reveal reveal-delay">
+          <div class="mission-item">
+            <span class="mission-num">01</span>
+            <h3 class="mission-title" data-i18n-html="mission.m1">Operational<br>Performance</h3>
+          </div>
+          <div class="mission-item">
+            <span class="mission-num">02</span>
+            <h3 class="mission-title" data-i18n-html="mission.m2">Energy<br>Efficiency</h3>
+          </div>
+          <div class="mission-item">
+            <span class="mission-num">03</span>
+            <h3 class="mission-title" data-i18n-html="mission.m3">Digital<br>Transformation</h3>
+          </div>
+          <div class="mission-item">
+            <span class="mission-num">04</span>
+            <h3 class="mission-title" data-i18n-html="mission.m4">Investment<br>Readiness</h3>
+          </div>
+          <div class="mission-item">
+            <span class="mission-num">05</span>
+            <h3 class="mission-title" data-i18n-html="mission.m5">Sustainable<br>Growth</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-expertise" id="expertise" data-section-index="5">
+      <div class="section-inner">
+        <div class="expertise-header reveal">
+          <p class="section-number" data-i18n="expertise.number">04 — Expertise</p>
+          <h2 class="section-headline headline-animate">
+            <span class="line" data-i18n="expertise.line1">Four Disciplines.</span>
+            <span class="line" data-i18n="expertise.line2">One Practice.</span>
+          </h2>
+        </div>
+        <div class="expertise-grid reveal reveal-delay">
+          <article class="expertise-card">
+            <span class="expertise-num">01</span>
+            <h3 class="expertise-title" data-i18n-html="expertise.e1title">Digital<br>Transformation</h3>
+            <p class="expertise-desc" data-i18n="expertise.e1desc">ERP &amp; CRM integration, process automation, data architecture.</p>
+          </article>
+          <article class="expertise-card">
+            <span class="expertise-num">02</span>
+            <h3 class="expertise-title" data-i18n-html="expertise.e2title">Financial<br>Engineering</h3>
+            <p class="expertise-desc" data-i18n="expertise.e2desc">Investment advisory, capital structuring, financial modelling.</p>
+          </article>
+          <article class="expertise-card">
+            <span class="expertise-num">03</span>
+            <h3 class="expertise-title" data-i18n-html="expertise.e3title">Energy &amp;<br>Sustainability</h3>
+            <p class="expertise-desc" data-i18n="expertise.e3desc">Renewable studies, efficiency audits, transition roadmaps.</p>
+          </article>
+          <article class="expertise-card">
+            <span class="expertise-num">04</span>
+            <h3 class="expertise-title" data-i18n-html="expertise.e4title">Smart Industry<br>&amp; IoT</h3>
+            <p class="expertise-desc" data-i18n="expertise.e4desc">Industrial IoT, control systems, intelligent manufacturing.</p>
+          </article>
+        </div>
+        <div class="section-cta reveal reveal-delay-2">
+          <a href="#contact" class="btn btn-outline" data-i18n="expertise.cta">Discuss Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-methodology" id="methodology" data-section-index="6">
+      <div class="section-inner">
+        <div class="methodology-header reveal">
+          <p class="section-number" data-i18n="methodology.number">05 — Methodology</p>
+          <h2 class="section-headline headline-animate">
+            <span class="line" data-i18n="methodology.line1">From Vision to Execution.</span>
+          </h2>
+        </div>
+        <div class="process reveal reveal-delay" id="process">
+          <div class="process-track" aria-hidden="true">
+            <div class="process-track-fill" id="process-track-fill"></div>
+          </div>
+          <div class="process-steps">
+            <div class="process-step" data-step="1">
+              <span class="process-num">01</span>
+              <span class="process-label" data-i18n="methodology.s1">Discover</span>
+            </div>
+            <div class="process-step" data-step="2">
+              <span class="process-num">02</span>
+              <span class="process-label" data-i18n="methodology.s2">Analyze</span>
+            </div>
+            <div class="process-step" data-step="3">
+              <span class="process-num">03</span>
+              <span class="process-label" data-i18n="methodology.s3">Design</span>
+            </div>
+            <div class="process-step" data-step="4">
+              <span class="process-num">04</span>
+              <span class="process-label" data-i18n="methodology.s4">Implement</span>
+            </div>
+            <div class="process-step" data-step="5">
+              <span class="process-num">05</span>
+              <span class="process-label" data-i18n="methodology.s5">Optimize</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-why" id="why" data-section-index="7">
+      <div class="section-inner">
+        <div class="why-grid">
+          <div class="why-text reveal">
+            <p class="section-number" data-i18n="why.number">06 — Why GET Consult</p>
+            <h2 class="section-headline headline-animate">
+              <span class="line" data-i18n="why.line1">A Multidisciplinary</span>
+              <span class="line" data-i18n="why.line2">Approach.</span>
+            </h2>
+            <p class="section-body" data-i18n="why.body">Like the Ikigai, our value emerges where four disciplines intersect — engineering, finance, energy and digital. Together they turn complexity into coherent transformation.</p>
+          </div>
+          <div class="why-visual reveal reveal-delay">
+            <div class="ikigai" id="ikigai">
+              <div class="ikigai-cell ikigai-cell--tl" data-i18n="why.p1title">Engineering</div>
+              <div class="ikigai-cell ikigai-cell--tr" data-i18n="why.p2title">Finance</div>
+              <div class="ikigai-center" data-i18n="why.center">Transformation</div>
+              <div class="ikigai-cell ikigai-cell--bl" data-i18n="why.p3title">Energy</div>
+              <div class="ikigai-cell ikigai-cell--br" data-i18n="why.p4title">Digital</div>
+            </div>
+            <div class="why-pillars">
+              <div class="pillar">
+                <span class="pillar-num">01</span>
+                <div class="pillar-content">
+                  <h3 class="pillar-title" data-i18n="why.p1title">Engineering</h3>
+                  <p class="pillar-desc" data-i18n="why.p1desc">Industrial expertise, technical rigor, operational performance.</p>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar-num">02</span>
+                <div class="pillar-content">
+                  <h3 class="pillar-title" data-i18n="why.p2title">Finance</h3>
+                  <p class="pillar-desc" data-i18n="why.p2desc">Investment readiness, financial structuring, value creation.</p>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar-num">03</span>
+                <div class="pillar-content">
+                  <h3 class="pillar-title" data-i18n="why.p3title">Energy</h3>
+                  <p class="pillar-desc" data-i18n="why.p3desc">Sustainability, efficiency, renewable transition.</p>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar-num">04</span>
+                <div class="pillar-content">
+                  <h3 class="pillar-title" data-i18n="why.p4title">Digital</h3>
+                  <p class="pillar-desc" data-i18n="why.p4desc">Data intelligence, automation, smart systems.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-reach" id="reach" data-section-index="8">
+      <div class="section-inner">
+        <p class="section-number" data-i18n="reach.number">08 — Regional Reach</p>
+        <h2 class="section-headline headline-animate">
+          <span class="line" data-i18n="reach.line1">Grounded in Morocco.</span>
+          <span class="line" data-i18n="reach.line2">Active Across Africa.</span>
+        </h2>
+        <p class="section-body section-body--narrow reveal" data-i18n="reach.body">From our base in Morocco, we deliver strategic consulting and engineering engagements across Africa — supporting industrial groups, investors and public institutions in seven markets.</p>
+        <div class="metrics-grid reach-metrics reveal">
+          <div class="metric">
+            <div class="metric-value-wrap">
+              <span class="metric-value" data-target="7">0</span>
+            </div>
+            <span class="metric-label" data-i18n="reach.m1label">Countries</span>
+          </div>
+          <div class="metric">
+            <div class="metric-value-wrap">
+              <span class="metric-value" data-target="50">0</span><span class="metric-suffix">+</span>
+            </div>
+            <span class="metric-label" data-i18n="reach.m2label">Projects Delivered</span>
+          </div>
+          <div class="metric metric--text">
+            <span class="metric-value metric-value--text" data-i18n="reach.m3value">Africa</span>
+            <span class="metric-label" data-i18n="reach.m3label">Continent</span>
+          </div>
+        </div>
+        <div class="reach-countries reveal reveal-delay">
+          <p class="reach-countries-label" data-i18n="reach.countriesLabel">Countries We Operate In</p>
+          <div class="reach-map-wrap">
+            <div class="reach-map" id="reach-map" role="group" aria-label="Africa map showing operating countries">
+              <p class="sr-only" data-i18n="reach.mapLabel">Map of Africa highlighting Morocco, Côte d'Ivoire, Senegal, Benin, Togo, Ghana and Mali.</p>
+            </div>
+            <p class="reach-map-tooltip" id="reach-map-tooltip" aria-hidden="true" hidden></p>
+          </div>
+          <ul class="reach-map-legend" id="countries-list" aria-label="Operating countries"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-impact" id="impact" data-section-index="9">
+      <div class="impact-bg parallax-bg" aria-hidden="true">
+        <img src="assets/images/impact-solar.jpg" alt="" loading="lazy"
+             data-fallback="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=80">
+      </div>
+      <div class="section-inner impact-content reveal">
+        <p class="section-number" data-i18n="impact.number">09 — Impact</p>
+        <div class="metrics-grid">
+          <div class="metric">
+            <div class="metric-value-wrap">
+              <span class="metric-value" data-founded>0</span><span class="metric-suffix">+</span>
+            </div>
+            <span class="metric-label" data-i18n="impact.m1label">Years in Operation</span>
+          </div>
+          <div class="metric">
+            <div class="metric-value-wrap">
+              <span class="metric-value" data-target="12">0</span><span class="metric-suffix">+</span>
+            </div>
+            <span class="metric-label" data-i18n="impact.m2label">Industry Sectors</span>
+          </div>
+          <div class="metric">
+            <div class="metric-value-wrap">
+              <span class="metric-value" data-target="4">0</span>
+            </div>
+            <span class="metric-label" data-i18n="impact.m3label">Core Disciplines</span>
+          </div>
+        </div>
+        <div class="impact-words headline-animate">
+          <span class="line impact-word" data-i18n="impact.w1">Performance.</span>
+          <span class="line impact-word" data-i18n="impact.w2">Innovation.</span>
+          <span class="line impact-word" data-i18n="impact.w3">Sustainability.</span>
+          <span class="line impact-word" data-i18n="impact.w4">Growth.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-closing" id="contact" data-section-index="10">
+      <div class="section-inner closing-content">
+        <div class="closing-intro reveal">
+          <h2 class="closing-headline headline-animate">
+            <span class="line" data-i18n="contact.line1">Simplifying Growth.</span>
+          </h2>
+          <div class="closing-logo">
+            <img src="assets/logo.svg" alt="GET Consult" width="300" height="90">
+          </div>
+          <p class="closing-location" data-i18n="contact.location">Fès · Casablanca · Morocco</p>
+        </div>
+
+        <div class="contact-block reveal reveal-delay">
+          <p class="contact-label" data-i18n="contact.label">Start a Conversation</p>
+          <p class="contact-response" data-i18n="contact.response">We respond within 48 hours.</p>
+
+          <div class="contact-channels">
+            <a href="#" class="btn btn-primary btn-full" id="contact-calendly" data-i18n="contact.calendly">Book a 20-Minute Call</a>
+            <a href="#" class="btn btn-secondary btn-full hidden" id="contact-whatsapp" target="_blank" rel="noopener noreferrer" data-i18n="contact.whatsapp">Message on WhatsApp</a>
+          </div>
+
+          <p class="contact-or" data-i18n="contact.or">Or reach us directly</p>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name" data-i18n="contact.name">Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="company" data-i18n="contact.company">Company</label>
+                <input type="text" id="company" name="company" autocomplete="organization">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="email" data-i18n="contact.email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="message" data-i18n="contact.message">Message</label>
+              <textarea id="message" name="message" rows="4" required data-i18n-placeholder="contact.placeholder"></textarea>
+            </div>
+            <button type="submit" class="form-submit" data-i18n="contact.submit">Send Inquiry</button>
+          </form>
+
+          <div class="contact-direct">
+            <a href="mailto:contact@get-consult.com" class="contact-email" id="contact-email-link">contact@get-consult.com</a>
+            <a href="https://www.get-consult.com" class="closing-domain">GET-CONSULT.COM</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="booking-dialog" id="booking-dialog" role="dialog" aria-labelledby="booking-title" aria-modal="true" hidden>
+    <div class="booking-backdrop" data-booking-close></div>
+    <div class="booking-panel">
+      <header class="booking-header">
+        <div class="booking-header-text">
+          <p class="booking-eyebrow" data-i18n="booking.eyebrow">Quick call</p>
+          <h2 class="booking-title" id="booking-title" data-i18n="booking.title">Book a 20-Minute Call</h2>
+          <p class="booking-subtitle" data-i18n="booking.subtitle">Pick a date and time. We will confirm your slot by email.</p>
+        </div>
+        <button type="button" class="booking-close" aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </header>
+
+      <div class="booking-progress">
+        <span class="booking-step-label">1 / 3</span>
+        <ol class="booking-step-names">
+          <li data-i18n="booking.stepDate">Date</li>
+          <li data-i18n="booking.stepTime">Time</li>
+          <li data-i18n="booking.stepDetails">Details</li>
+        </ol>
+      </div>
+
+      <div class="booking-body">
+        <section class="booking-step is-active" id="booking-step-date">
+          <div class="booking-calendar">
+            <div class="booking-calendar-nav">
+              <button type="button" class="booking-cal-nav" id="booking-calendar-prev" aria-label="Previous month">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <p class="booking-calendar-month" id="booking-calendar-month"></p>
+              <button type="button" class="booking-cal-nav" id="booking-calendar-next" aria-label="Next month">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+            <div class="booking-calendar-grid" id="booking-calendar-grid"></div>
+            <p class="booking-timezone-note" data-i18n="booking.timezoneNote">Times shown in Morocco (GMT+1). Weekdays only.</p>
+          </div>
+        </section>
+
+        <section class="booking-step" id="booking-step-time" hidden>
+          <p class="booking-step-hint" data-i18n="booking.selectTime">Select a time for your 20-minute call.</p>
+          <div class="booking-time-slots" id="booking-time-slots"></div>
+        </section>
+
+        <section class="booking-step" id="booking-step-details" hidden>
+          <div class="booking-selected-summary" id="booking-selected-summary"></div>
+          <form class="booking-form" id="booking-form">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="booking-name" data-i18n="booking.name">Name</label>
+                <input type="text" id="booking-name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-field">
+                <label for="booking-company" data-i18n="booking.company">Company</label>
+                <input type="text" id="booking-company" name="company" autocomplete="organization">
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="booking-email" data-i18n="booking.email">Email</label>
+              <input type="email" id="booking-email" name="email" required autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="booking-topic" data-i18n="booking.topic">Meeting topic</label>
+              <input type="text" id="booking-topic" name="topic" data-i18n-placeholder="booking.topicPlaceholder">
+            </div>
+            <div class="form-field">
+              <label for="booking-notes" data-i18n="booking.notes">Additional details</label>
+              <textarea id="booking-notes" name="notes" rows="3" data-i18n-placeholder="booking.notesPlaceholder"></textarea>
+            </div>
+            <button type="submit" class="form-submit booking-submit" data-i18n="booking.submit">Send Request</button>
+          </form>
+        </section>
+      </div>
+
+      <footer class="booking-footer">
+        <button type="button" class="booking-back" id="booking-back" hidden data-i18n="booking.back">Back</button>
+        <button type="button" class="booking-next" id="booking-next" data-i18n="booking.next">Next</button>
+      </footer>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="site-footer-legal" data-i18n="footer.legal">© GET Consult. All rights reserved.</p>
+      <a href="https://www.get-consult.com" class="site-footer-domain">GET-CONSULT.COM</a>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

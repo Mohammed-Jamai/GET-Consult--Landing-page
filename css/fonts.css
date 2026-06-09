@@ -1,0 +1,33 @@
+/* Telegraph (PP Telegraf) + Sackers Gothic */
+
+@font-face {
+  font-family: 'Telegraph';
+  src: url('https://db.onlinewebfonts.com/t/cd7b05ba22e73021e0a390f532a72589.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telegraph';
+  src: url('https://db.onlinewebfonts.com/t/fcb8eb4543f38b6923060350cf401db8.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sackers Gothic';
+  src: url('https://db.onlinewebfonts.com/t/ac1e7ef3bb0206a73c092ad519457516.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sackers Gothic';
+  src: url('https://db.onlinewebfonts.com/t/72cb9dc166ec665e42fe71334d3b8632.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}

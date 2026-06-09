@@ -1,0 +1,11 @@
+# Dependencies
+deploy/node_modules/
+
+# Secrets & local deploy
+deploy/.ssh-password
+deploy/get-consult-site.tar.gz
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
