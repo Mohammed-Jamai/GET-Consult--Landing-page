@@ -20,6 +20,7 @@ if ! command -v git >/dev/null 2>&1; then
 fi
 
 mkdir -p "$SITE_DIR"
+git config --global --add safe.directory "$SITE_DIR" 2>/dev/null || true
 
 if [ -d "$SITE_DIR/.git" ]; then
   echo "==> Existing git repo — fetching latest..."

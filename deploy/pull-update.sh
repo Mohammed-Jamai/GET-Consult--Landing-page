@@ -18,6 +18,8 @@ if [ ! -d "$SITE_DIR/.git" ]; then
   exit 1
 fi
 
+git config --global --add safe.directory "$SITE_DIR" 2>/dev/null || true
+
 echo "==> Pulling origin/$BRANCH into $SITE_DIR..."
 chown -R root:root "$SITE_DIR/.git"
 git -C "$SITE_DIR" fetch origin "$BRANCH"
@@ -34,6 +36,8 @@ set_site_permissions
 echo "==> Deployed commit:"
 git -C "$SITE_DIR" log -1 --oneline
 echo ""
-VERIFY_URL="${VERIFY_URL:-https://get-consult.com}"
-curl -sfI "$VERIFY_URL" 2>/dev/null | head -3 || curl -sfI http://5.189.157.30/ | head -3 || true
+echo "==> Health check:"
+curl -sfI http://5.189.157.30/ 2>/dev/null | head -3 \
+  || curl -sfI -H "Host: get-consult.com" http://127.0.0.1/ 2>/dev/null | head -3 \
+  || true
 echo "Done — site updated from GitHub."
