@@ -42,12 +42,16 @@ chown -R www-data:www-data "$SITE_DIR"
 chmod -R a+rX "$SITE_DIR"
 
 if [ -f "$SITE_DIR/deploy/nginx-get-consult.conf" ]; then
-  echo "==> Updating nginx config..."
-  cp "$SITE_DIR/deploy/nginx-get-consult.conf" /etc/nginx/sites-available/get-consult
-  rm -f /etc/nginx/sites-enabled/*
-  ln -sf /etc/nginx/sites-available/get-consult /etc/nginx/sites-enabled/get-consult
-  nginx -t
-  systemctl reload nginx
+  if [ -d /etc/letsencrypt/live/get-consult.com ]; then
+    echo "==> SSL already configured by certbot — keeping nginx HTTPS config."
+  else
+    echo "==> Updating nginx config..."
+    cp "$SITE_DIR/deploy/nginx-get-consult.conf" /etc/nginx/sites-available/get-consult
+    rm -f /etc/nginx/sites-enabled/*
+    ln -sf /etc/nginx/sites-available/get-consult /etc/nginx/sites-enabled/get-consult
+    nginx -t
+    systemctl reload nginx
+  fi
 fi
 
 echo ""
