@@ -61,4 +61,7 @@ echo ""
 echo "  Future updates on the server:"
 echo "    bash $SITE_DIR/deploy/pull-update.sh"
 echo "=========================================="
-curl -sI http://127.0.0.1/ | head -5
+VERIFY_URL="${VERIFY_URL:-https://get-consult.com}"
+if ! curl -sfI "$VERIFY_URL" | head -5; then
+  curl -sfI http://5.189.157.30/ | head -5 || true
+fi

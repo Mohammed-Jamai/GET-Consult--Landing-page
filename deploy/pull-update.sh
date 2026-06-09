@@ -28,5 +28,6 @@ chmod -R a+rX "$SITE_DIR"
 echo "==> Deployed commit:"
 git -C "$SITE_DIR" log -1 --oneline
 echo ""
-curl -sI http://127.0.0.1/ | head -3
+VERIFY_URL="${VERIFY_URL:-https://get-consult.com}"
+curl -sfI "$VERIFY_URL" 2>/dev/null | head -3 || curl -sfI http://5.189.157.30/ | head -3 || true
 echo "Done — site updated from GitHub."
