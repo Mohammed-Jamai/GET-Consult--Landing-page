@@ -37,9 +37,10 @@ if [ ! -f "$SITE_DIR/index.html" ]; then
   exit 1
 fi
 
-chmod +x "$SITE_DIR"/deploy/*.sh 2>/dev/null || true
 chown -R www-data:www-data "$SITE_DIR"
+chown -R root:root "$SITE_DIR/.git"
 chmod -R a+rX "$SITE_DIR"
+chmod +x "$SITE_DIR"/deploy/*.sh 2>/dev/null || true
 
 if [ -f "$SITE_DIR/deploy/nginx-get-consult.conf" ]; then
   if [ -d /etc/letsencrypt/live/get-consult.com ]; then

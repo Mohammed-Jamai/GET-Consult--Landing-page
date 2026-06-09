@@ -5,6 +5,13 @@ set -euo pipefail
 SITE_DIR="/var/www/get-consult"
 BRANCH="${BRANCH:-main}"
 
+set_site_permissions() {
+  chown -R www-data:www-data "$SITE_DIR"
+  chown -R root:root "$SITE_DIR/.git"
+  chmod -R a+rX "$SITE_DIR"
+  chmod +x "$SITE_DIR"/deploy/*.sh 2>/dev/null || true
+}
+
 if [ ! -d "$SITE_DIR/.git" ]; then
   echo "ERROR: $SITE_DIR is not a git repository."
   echo "Run once: bash /var/www/get-consult/deploy/setup-git-deploy.sh"
@@ -12,6 +19,7 @@ if [ ! -d "$SITE_DIR/.git" ]; then
 fi
 
 echo "==> Pulling origin/$BRANCH into $SITE_DIR..."
+chown -R root:root "$SITE_DIR/.git"
 git -C "$SITE_DIR" fetch origin "$BRANCH"
 git -C "$SITE_DIR" checkout "$BRANCH"
 git -C "$SITE_DIR" reset --hard "origin/$BRANCH"
@@ -21,9 +29,7 @@ if [ ! -f "$SITE_DIR/index.html" ]; then
   exit 1
 fi
 
-chmod +x "$SITE_DIR"/deploy/*.sh 2>/dev/null || true
-chown -R www-data:www-data "$SITE_DIR"
-chmod -R a+rX "$SITE_DIR"
+set_site_permissions
 
 echo "==> Deployed commit:"
 git -C "$SITE_DIR" log -1 --oneline
