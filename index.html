@@ -3,14 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Strategic consulting at the intersection of engineering, finance, energy and digital. GET Consult — Transforming Industry. Accelerating Growth.">
-  <meta property="og:title" content="GET Consult — Strategic Consulting & Engineering">
-  <meta property="og:description" content="Strategic consulting at the intersection of engineering, finance, energy and digital — for organizations ready to transform.">
+  <title>GET Consult | Strategic Consulting &amp; Engineering — Morocco &amp; Africa</title>
+  <meta name="description" content="GET Consult delivers strategic consulting in engineering, finance, energy and digital transformation for industrial groups, investors and institutions across Morocco and Africa.">
+  <meta name="keywords" content="GET Consult, strategic consulting, engineering consulting, digital transformation, energy consulting, Morocco, Africa, Casablanca, Fès, industrial consulting">
+  <meta name="author" content="GET Consult">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://www.get-consult.com/">
+  <link rel="alternate" hreflang="en" href="https://www.get-consult.com/">
+  <link rel="alternate" hreflang="fr" href="https://www.get-consult.com/">
+  <link rel="alternate" hreflang="x-default" href="https://www.get-consult.com/">
+  <meta property="og:site_name" content="GET Consult">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:title" content="GET Consult | Strategic Consulting &amp; Engineering — Morocco &amp; Africa">
+  <meta property="og:description" content="Strategic consulting at the intersection of engineering, finance, energy and digital — for organizations ready to transform across Morocco and Africa.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.get-consult.com">
+  <meta property="og:url" content="https://www.get-consult.com/">
+  <meta property="og:image" content="https://www.get-consult.com/assets/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GET Consult — Strategic Consulting and Engineering">
   <meta name="twitter:card" content="summary_large_image">
-  <title>GET Consult — Strategic Consulting & Engineering</title>
+  <meta name="twitter:title" content="GET Consult | Strategic Consulting &amp; Engineering">
+  <meta name="twitter:description" content="Engineering, finance, energy and digital consulting for industrial transformation across Morocco and Africa.">
+  <meta name="twitter:image" content="https://www.get-consult.com/assets/og-image.svg">
+  <meta name="twitter:image:alt" content="GET Consult — Strategic Consulting and Engineering">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/logo.svg">
   <link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin>
   <script>
     (function () {
@@ -20,19 +41,66 @@
   </script>
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script type="application/ld+json">
+  <script type="application/ld+json" id="structured-data">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "GET Consult",
-    "url": "https://www.get-consult.com",
-    "email": "contact@get-consult.com",
-    "description": "Strategic consulting at the intersection of engineering, finance, energy and digital.",
-    "foundingDate": "2018",
-    "areaServed": ["Morocco", "Côte d'Ivoire", "Senegal", "Benin", "Togo", "Ghana", "Mali", "Africa"],
-    "address": [
-      { "@type": "PostalAddress", "addressLocality": "Fès", "addressCountry": "MA" },
-      { "@type": "PostalAddress", "addressLocality": "Casablanca", "addressCountry": "MA" }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.get-consult.com/#organization",
+        "name": "GET Consult",
+        "url": "https://www.get-consult.com/",
+        "logo": "https://www.get-consult.com/assets/logo.svg",
+        "image": "https://www.get-consult.com/assets/og-image.svg",
+        "email": "contact@get-consult.com",
+        "foundingDate": "2018",
+        "sameAs": ["https://www.linkedin.com/company/get-consult"],
+        "address": [
+          { "@type": "PostalAddress", "addressLocality": "Fès", "addressCountry": "MA" },
+          { "@type": "PostalAddress", "addressLocality": "Casablanca", "addressCountry": "MA" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.get-consult.com/#website",
+        "url": "https://www.get-consult.com/",
+        "name": "GET Consult",
+        "description": "Strategic consulting in engineering, finance, energy and digital transformation across Morocco and Africa.",
+        "publisher": { "@id": "https://www.get-consult.com/#organization" },
+        "inLanguage": ["en", "fr"]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.get-consult.com/#service",
+        "name": "GET Consult",
+        "url": "https://www.get-consult.com/",
+        "image": "https://www.get-consult.com/assets/og-image.svg",
+        "email": "contact@get-consult.com",
+        "description": "Strategic consulting at the intersection of engineering, finance, energy and digital for industrial groups, investors and public institutions.",
+        "foundingDate": "2018",
+        "parentOrganization": { "@id": "https://www.get-consult.com/#organization" },
+        "serviceType": [
+          "Strategic Consulting",
+          "Engineering Consulting",
+          "Energy Consulting",
+          "Digital Transformation",
+          "Financial Advisory"
+        ],
+        "areaServed": [
+          { "@type": "Country", "name": "Morocco" },
+          { "@type": "Country", "name": "Côte d'Ivoire" },
+          { "@type": "Country", "name": "Senegal" },
+          { "@type": "Country", "name": "Benin" },
+          { "@type": "Country", "name": "Togo" },
+          { "@type": "Country", "name": "Ghana" },
+          { "@type": "Country", "name": "Mali" },
+          { "@type": "Continent", "name": "Africa" }
+        ],
+        "address": [
+          { "@type": "PostalAddress", "addressLocality": "Fès", "addressCountry": "MA" },
+          { "@type": "PostalAddress", "addressLocality": "Casablanca", "addressCountry": "MA" }
+        ]
+      }
     ]
   }
   </script>

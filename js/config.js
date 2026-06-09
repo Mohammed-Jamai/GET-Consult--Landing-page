@@ -1,4 +1,5 @@
 window.GET_CONFIG = {
+  siteUrl: 'https://www.get-consult.com',
   foundingYear: 2018,
   email: 'contact@get-consult.com',
   contactApi: '/api/contact.php',

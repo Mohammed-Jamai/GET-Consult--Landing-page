@@ -4,8 +4,10 @@
   const T = {
     en: {
       meta: {
-        title: 'GET Consult — Strategic Consulting & Engineering',
-        description: 'Strategic consulting at the intersection of engineering, finance, energy and digital. Transforming Industry. Accelerating Growth.',
+        title: 'GET Consult | Strategic Consulting & Engineering — Morocco & Africa',
+        description: 'GET Consult delivers strategic consulting in engineering, finance, energy and digital transformation for industrial groups, investors and institutions across Morocco and Africa.',
+        keywords: 'GET Consult, strategic consulting, engineering consulting, digital transformation, energy consulting, Morocco, Africa, Casablanca, Fès, industrial consulting',
+        ogLocale: 'en_US',
       },
       nav: { about: 'About', expertise: 'Expertise', methodology: 'Methodology', contact: 'Contact', cta: 'Start a Conversation', menu: 'Menu', close: 'Close menu' },
       theme: { toggle: 'Toggle color theme' },
@@ -158,8 +160,10 @@
     },
     fr: {
       meta: {
-        title: 'GET Consult — Conseil Stratégique & Ingénierie',
-        description: 'Conseil stratégique à l\'intersection de l\'ingénierie, de la finance, de l\'énergie et du digital. Transformer l\'Industrie. Accélérer la Croissance.',
+        title: 'GET Consult | Conseil Stratégique & Ingénierie — Maroc & Afrique',
+        description: 'GET Consult accompagne groupes industriels, investisseurs et institutions en conseil stratégique, ingénierie, finance, énergie et transformation digitale au Maroc et en Afrique.',
+        keywords: 'GET Consult, conseil stratégique, ingénierie, transformation digitale, énergie, Maroc, Afrique, Casablanca, Fès, conseil industriel',
+        ogLocale: 'fr_FR',
       },
       nav: { about: 'À propos', expertise: 'Expertise', methodology: 'Méthodologie', contact: 'Contact', cta: 'Entamer un échange', menu: 'Menu', close: 'Fermer le menu' },
       theme: { toggle: 'Changer le thème de couleur' },
@@ -327,6 +331,24 @@
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.content = dict.meta.description;
+
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (metaKeywords && dict.meta.keywords) metaKeywords.content = dict.meta.keywords;
+
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.content = dict.meta.title;
+
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc) ogDesc.content = dict.meta.description;
+
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale && dict.meta.ogLocale) ogLocale.content = dict.meta.ogLocale;
+
+    const twTitle = document.querySelector('meta[name="twitter:title"]');
+    if (twTitle) twTitle.content = dict.meta.title;
+
+    const twDesc = document.querySelector('meta[name="twitter:description"]');
+    if (twDesc) twDesc.content = dict.meta.description;
 
     document.querySelectorAll('[data-i18n]').forEach((el) => {
       const key = el.dataset.i18n;
